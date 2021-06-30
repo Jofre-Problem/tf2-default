@@ -52,6 +52,8 @@ IF EXIST "dev\HLExtract.exe" (
 	dev\HLExtract.exe -p "..\..\..\tf2_misc_dir.vpk" -d "%script_folder%" -e "root\scripts\hudlayout.res" -m -v -s
 	dev\HLExtract.exe -p "..\..\..\tf2_misc_dir.vpk" -d "%script_folder%" -e "root\scripts\hudanimations_tf.txt" -m -v -s
 	dev\HLExtract.exe -p "..\..\..\tf2_misc_dir.vpk" -d "%script_folder%" -e "root\scripts\mod_textures.txt" -m -v -s
+	dev\HLExtract.exe -p "..\..\..\tf2_misc_dir.vpk" -d "%script_folder%" -e "root\scripts\newbindings.txt" -m -v -s	
+	dev\HLExtract.exe -p "..\..\..\tf2_misc_dir.vpk" -d "%script_folder%" -e "root\scripts\vgui_screens.txt" -m -v -s		
 	echo Extracting resource files to %resource_folder%
 	
 
@@ -60,6 +62,7 @@ IF EXIST "dev\HLExtract.exe" (
 	RMDIR \S \Q %resource_folder%
 	dev\HLExtract.exe -p "..\..\..\..\hl2\hl2_misc_dir.vpk" -d "%scheme_folder%" -e "root\resource" -m -v -s	
 	dev\HLExtract.exe -p "..\..\..\..\hl2\hl2_misc_dir.vpk" -d "%script_folder%" -e "root\scripts" -m -v -s		
+	dev\HLExtract.exe -p "..\..\..\..\hl2\hl2_misc_dir.vpk" -d "%script_folder%" -e "root\scripts\scripts\hud_textures.txt" -m -v -s	
 	dev\HLExtract.exe -p "..\..\..\..\platform\platform_misc_dir.vpk" -d "%default_tf2hud_folder%" -e "root" -m -v -s			
 	dev\HLExtract.exe -p "..\..\..\tf2_misc_dir.vpk" -d "%resource_folder%\.." -e "root\resource\ui" -m -v -s
 	dev\HLExtract.exe -p "..\..\..\tf2_misc_dir.vpk" -d "%classes_folder%\.." -e "root\classes" -m -v -s
